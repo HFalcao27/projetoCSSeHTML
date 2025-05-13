@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0; /* É um padrão bastante usado */
+}
+
+body {
+    height: 100vh; /* aqui garante que o body será usado 100% na páginaweb*/
+    box-sizing: border-box;
+    background-color: black;
+    color: #F6F6F6;
+}
+strong {
+    color: #22d4fd;
+}
+.nome-destaque {
+    color:#ff0000;
+}
+
+span {
+    color: #FFFF00;
+    border: 1px solid #22d4fd;
+    padding: 1px; /* Isso aqui é um quadro que fica em volta do palavra */
+}
+
+.apresentacao { /* Lembrando que foi coloca a classe no main para poder todo mundo ter a mesma formatação de layout */
+    margin: 10% 9%; 
+    display: flex;
+    /* Uma formatação bastante usada é flex direction*/
+    align-items:center; /*Vai alinhas os elementos.*/
+    justify-content:space-between;
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size:36px;
+    font-family: "Krona One", sans-serif;
+}
+
+.apresentacao__conteudo__paragrafo {
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+}
+.apresentacao__links{
+    display: flex;
+    justify-content: space-between;
+}
+.apresentacao__links__link1{
+    background-color: #22d4fd;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0; /*O primeiro valor sempre será vertical e o segundo será horinzontal*/
+    text-decoration: none;
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+}
+.imagemspfc{
+    border-radius: 20px;
+    max-height: 75vh; /*Isso diminui a imagem*/
+}

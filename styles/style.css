@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/*:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+
+    --fonte-primaria: 'krone One', sans-serif;
+    --fonte-secundaria: 'Montserrat',sans-serif;
+}*/ /*o :root serve pra mudar as cores de um projeto, mudar todas as cores de uma vez só sem precisar ficar mudando uma por uma.*/
+
 *{
     margin: 0;
     padding: 0; /* É um padrão bastante usado */
@@ -8,7 +18,7 @@
 body {
     /*height: 100vh; aqui garante que o body será usado 100% na páginaweb*/
     box-sizing: border-box;
-    background-color: black;
+    background-color: black; /*pode ser que eu tire a cor e acrescente o var() pra mudar as cores ao mesmo tempo, as cores pré definidas pelo :root*/
     color: #F6F6F6;
 }
 

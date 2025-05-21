@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mim</title> <!--Aqui sempre colocar o titulo-->
+    <link rel="stylesheet" href="./styles/style.css"> <!--Se escrever link:css é um atalho pra isso ai___ Inclusive é aqui que importa o css de outro lugar pra linkar aqui.-->
 </head>
 <body>
-   <h1>Sobre mim</h1> 
+   <header class="cabecalho">
+        <nav class="cabecalho__menu"> <!--Os links que ficam em cima no cabeçario, lnks clicaves para naveegação (menu)-->
+            <a class="cabecalho__menu__link" href="index.html"> Home</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+        </nav>
+   </header>
+
+   <main class="apresentacao"><!--Prestar atenção que essa classe ela foi copiada e colada aqui pra poder copiar a classe que está no CSS. -->
+        <section class="apresentacao__conteudo">
+                <h1 class="apresentacao__conteudo__titulo">Sobre mim</h1>
+                <p class="apresentacao__conteudo__paragrafo">Meu nome é Hallyson Falcão e estou fazendo a minha primeira página. Claro que existe muita dificuldade. Mas fica aqui o meu primeiro registro. Onde eu vou chegar? Espero que eu consiga um emprego e trabalhe de casa.</p>
+                <p class="apresentacao__conteudo__paragrafo">Vamos ver se até a copa do mundo de 2026 eu estarei trabalhando, caso consiga vai ser bom demais. Além de aprender a mexer com CSS E HTML já consigo desenrolar bastente no git e no github. Java é muito complicado mas com o tempo eu consigo desenrolar melhor. Meta é dominar JAVA, CSS, HTML, ANGULAR E JAVASCRIPT. Se eu conseguir dominar uma guitarra, aqui é questão de tempo. Fica o registro 21/05/2025.</p>
+        </section>
+        <img class="imagemspfc" src="./assets/instadp_falcaootricolor_full_size.jpg" alt="Hallyson Falcão - perfil.">
+   </main>
+
+    <footer class="rodape">
+            <p>Desenvolvido por Hallyson Falcão</p>
+    </footer> 
 </body>
 </html>

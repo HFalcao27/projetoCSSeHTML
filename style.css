@@ -6,14 +6,27 @@
 }
 
 body {
-    height: 100vh; /* aqui garante que o body será usado 100% na páginaweb*/
+    /*height: 100vh; aqui garante que o body será usado 100% na páginaweb*/
     box-sizing: border-box;
     background-color: black;
     color: #F6F6F6;
 }
+
+.cabecalho {
+    padding: 2% 0% 0% 10%;/*Nesse caso tem que deixar o "%" porque facilita para todo tipo de tela*/
+}
+
+.cabecalho__menu__link {
+    font-family: 'Montserrast' sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color:#22D4FD;
+}
+
 strong {
     color: #22d4fd;
 }
+
 .nome-destaque {
     color:#ff0000;
 }
@@ -25,7 +38,7 @@ span {
 }
 
 .apresentacao { /* Lembrando que foi coloca a classe no main para poder todo mundo ter a mesma formatação de layout */
-    margin: 10% 9%; 
+    margin: 10% 9%; /*Ou pode usar o padding no lugar do margin*/
     display: flex;
     /* Uma formatação bastante usada é flex direction*/
     align-items:center; /*Vai alinhas os elementos.*/
@@ -49,22 +62,57 @@ span {
     font-family: "Montserrat", sans-serif;
 }
 .apresentacao__links{
-    display: flex;
+    display: flex; /* Deixando apenas esse o projeto fica na horinzotal */
+    flex-direction: column; /*fazendo esse comando já deixa o lugar escolhido em coluna (vertical)*/
+    align-items: center ; /*Centraliza os elementos*/ 
     justify-content: space-between;
+    gap: 32px; /*Separa os espaçamento / faz o espaçamento'*/
 }
+
+.apresentacao__links__subtitulos {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    
+}
+
 .apresentacao__links__link1{
-    background-color: #22d4fd;
-    width: 280px;
+    /*background-color: #22d4fd; Deixa o quadrado atrás do link.*/
+    border: 2px solid #22d4fd; /* Esse código traz um traçado/ uma borda*/
+    display: flex; /* colocou pra alinhar no canto*/
+    justify-content: center;
+    gap: 16px; /*traz a separação entre o icone e a palavra*/
+    width: 378px;
     text-align: center;
-    border-radius: 16px;
+    border-radius: 8px;
     font-size: 24px;
     font-weight: 600;
-    padding: 21.5px 0; /*O primeiro valor sempre será vertical e o segundo será horinzontal*/
+    padding: 21.5px 0;/* O primeiro valor sempre será vertical e o segundo será horinzontal*/
     text-decoration: none;
-    color: #000000;
+    color: #f6f6f6;
     font-family: "Montserrat", sans-serif;
 }
-.imagemspfc{
-    border-radius: 20px;
+
+.apresentacao__links__link1:hover {
+    background-color: #272727; /* 1°Vai mudar a fundo da ancora quando o mouse passar por cima*/
+/* 2° Vale lembrar que essa classe foi repetida*/
+}
+
+.imagemspfc {
+    border-radius: 8px;
     max-height: 75vh; /*Isso diminui a imagem*/
+} 
+.apresentacao__links__subtitulos{
+
+}
+
+.rodape {
+    padding: 24px; /* importante prestar atenção nisso, coloca a margem do tamanho certo*/
+    color : #000000;
+    background-color: #22D4FD;
+    text-align: center;
+    font-family: 'Monteserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+
 }

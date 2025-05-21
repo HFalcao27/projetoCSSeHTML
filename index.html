@@ -8,19 +8,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <header></header> 
+   <header class="cabecalho">
+        <nav class="cabecalho__menu"> <!--Os links que ficam em cima no cabeçario, lnks clicaves para naveegação (menu)-->
+            <a class="cabecalho__menu__link"> Home</a>
+            <a class="cabecalho__menu__link">Sobre mim</a>
+        </nav>
+   </header> 
    <main class="apresentacao"> <!--Lembrar que a class foi adicionada depois. Para poder fazer estilização. -->
             <section class="apresentacao__conteudo">
                 <h1 class="apresentacao__conteudo__titulo">Só exsite um time que é Campeão de tudo. <strong>Três cores que faz a toricda vibrar.</strong></h1>
                 <p class="apresentacao__conteudo__paragrafo">Olá, meu nome é <strong class="nome-destaque">Hallyson Falcão</strong> e sou torcedor do <span>Tricolor do MorumBis.</span>Tenho uma página com mais de 13k de seguidores. É torcedor do São Paulo? Então acompanhe o meu conteúdo.</p>
                         <div class="apresentacao__links">
-                        <a class="apresentacao__links__link1" href="https://www.instagram.com/falcaootricolor/?hl=pt-br">Instagram</a>
-                        <a class="apresentacao__links__link1" href="https://web.facebook.com/falcaootricolor/">Facebook</a> 
+                            <h2 class="apresentacao__links__subtitulos">Acesse minhas redes:</h2>
+                                <a class="apresentacao__links__link1" href="https://www.instagram.com/falcaootricolor/?hl=pt-br">
+                                    <img src="./assets/instagram.png">
+                                    Instagram 
+                                </a>
+                                <a class="apresentacao__links__link1" href="https://github.com/HFalcao27">
+                                    <img src="./assets/github.png">
+                                    github
+                                </a> 
                         </div> 
-                    
             </section> 
-            <img class="imagemspfc" src="instadp_falcaootricolor_full_size.jpg" alt="Hallyson Falcão - perfil.">
+            <img class="imagemspfc" src="instadp_falcaootricolor_full_size.jpg" alt="Hallyson Falcão - perfil."> <!--Se acrescentarmos antes da instadp_falcao o ./assets/instdp.falc....png vai trazer a imagem que estará na página.-->
    </main>
-   <footer></footer> 
+   <footer class="rodape">
+        <p>Desenvolvido por Hallyson Falcão</p>
+   </footer> 
 </body>
 </html>

@@ -16,11 +16,17 @@ body {
     padding: 2% 0% 0% 10%;/*Nesse caso tem que deixar o "%" porque facilita para todo tipo de tela*/
 }
 
+.cabecalho__menu { /*Trabalhar o espaçamento entre links do menu.*/
+    display: flex;
+    gap: 80px; /*Espaçou os links.*/
+}
+
 .cabecalho__menu__link {
-    font-family: 'Montserrast' sans-serif;
+    font-family: 'Montserrast', sans-serif;
     font-size: 24px;
     font-weight: 600;
     color:#22D4FD;
+    text-decoration: none; /*serve pare tirar o subilinhado do texto*/
 }
 
 strong {
@@ -38,7 +44,7 @@ span {
 }
 
 .apresentacao { /* Lembrando que foi coloca a classe no main para poder todo mundo ter a mesma formatação de layout */
-    margin: 10% 9%; /*Ou pode usar o padding no lugar do margin*/
+    margin: 5% 9%; /*Ou pode usar o padding no lugar do margin*/
     display: flex;
     /* Uma formatação bastante usada é flex direction*/
     align-items:center; /*Vai alinhas os elementos.*/
